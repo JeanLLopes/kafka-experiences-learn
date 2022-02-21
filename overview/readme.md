@@ -31,3 +31,15 @@
 - The data has syncronized using a KSQL
 - If Kafka Broker down the Zookeeper sent the messages automatically to Kafka Particion **ISR(in sync replica (is a second particion in other Kafka Broker))**
 
+<br>
+
+### PRODUCER
+- When you produce a message, you can choose if enable acknowledgment to write data on Kafka Cluster
+  - Producer can use a follow options to guarantee the data write
+    - ACKS = 0    => The producer not wait the data acknowledgment by Kafka Cluster (possible data loss)
+    - ACKS = 1    => The producer wait for the Kafka Partition Leader data acknowledgment by Kafka Cluster (limited data loss)
+    - ACKS = ALL  => The producer wait for the Kafka Partition Leader and Kafka Partition replicas data acknowledgment by Kafka Cluster (no data loss)     
+
+- You can sent a Message Key, with a message key you can guarantee that the message are send for the same Kafka Partition
+  - Example, if you send a message-key = Id_1 or Id_2, this messages are available in Kafka Broker 001, but if you send a message-key = Id_5 or Id_6, this messages are available in Kafka Broker 002, this messages not pass by Kafka round robin
+  - If you not send a message-partition your message are sent to Kafka Round-Robin and the same message are available in all Kafka Broker, Kafka Round-Robin sent the message for all Kafka Brokers 
