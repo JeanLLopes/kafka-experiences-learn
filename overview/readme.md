@@ -43,3 +43,7 @@
 - You can sent a Message Key, with a message key you can guarantee that the message are send for the same Kafka Partition
   - Example, if you send a message-key = Id_1 or Id_2, this messages are available in Kafka Broker 001, but if you send a message-key = Id_5 or Id_6, this messages are available in Kafka Broker 002, this messages not pass by Kafka round robin
   - If you not send a message-partition your message are sent to Kafka Round-Robin and the same message are available in all Kafka Broker, Kafka Round-Robin sent the message for all Kafka Brokers 
+
+<br>
+
+### CONSUMER
