@@ -47,3 +47,33 @@
 <br>
 
 ### CONSUMER
+- Each consumer read one Kafka partition
+- Consumer group is per example your application, your application have a one or more consumers 
+[![image](https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/assets/ktdg_04in05.png)](https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/assets/ktdg_04in05.png)
+
+- If your application have more consumers than Kafka Partition your consumer stay stoped
+[![image](https://www.fatalerrors.org/images/blog/a0989ce8eda8a0349fa1d5bf12cb8bd6.jpg)](https://www.fatalerrors.org/images/blog/a0989ce8eda8a0349fa1d5bf12cb8bd6.jpg)
+
+<br>
+
+### CONSUMER OFFSET
+[![image](https://ibm-cloud-architecture.github.io/refarch-eda/static/75701f1ef05216ee0b2dab14e2541f68/3cbba/consumer-groups.png)](https://ibm-cloud-architecture.github.io/refarch-eda/static/75701f1ef05216ee0b2dab14e2541f68/3cbba/consumer-groups.png)
+
+- You can consume messages at 3 ways:
+  - At most once
+  - At least once
+  - Exactly once
+    - This is the best use, but you need a Kafka consumer to Kafka or a directy database, for example Spark Database
+    - Kafka workflow or Kafka Streams API
+  - [![image](https://www.singlestore.com/images/cms/blog-posts/img_blog_post_image_exactly-once-semantics-with-apache-kafka_1.jpg )](https://www.singlestore.com/images/cms/blog-posts/img_blog_post_image_exactly-once-semantics-with-apache-kafka_1.jpg )
+
+
+<br>
+
+### BROKER DISCOVERY
+- When you need to connect to one broker, you will be connected to the entire cluster
+- Each Kafka Broker knows about all Kafka Bokers, Kafka topics and Kafka partition
+- When you connect in one Kafka Broker, the Kafka Broker sent to you metadatas about list of all Kafka Brokers
+- [![image](https://miro.medium.com/max/1400/0*lsDlitjrCj7pzglr)](https://miro.medium.com/max/1400/0*lsDlitjrCj7pzglr)
+
+
