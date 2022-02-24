@@ -76,4 +76,15 @@
 - When you connect in one Kafka Broker, the Kafka Broker sent to you metadatas about list of all Kafka Brokers
 - [![image](https://miro.medium.com/max/1400/0*lsDlitjrCj7pzglr)](https://miro.medium.com/max/1400/0*lsDlitjrCj7pzglr)
 
+<br>
+
+### ZOOKEEPER
+- Is a program separate of the Kafka
+- He not talk with a Kafka consumers or Kafka producer
+- Is a manager Kafka Brokers
+- Kafka can not work without Zookeeper 
+- Send notification to Kafka when Kafka brokers die, Kafka Brokers is comes up, delete topic, etc
+- You can use more one Zookeeper, one is a Leader and others are the followers, the Zookeeper Leader comunicate with a kafka and Zookeeper followers
+- [![image](https://ibm-cloud-architecture.github.io/refarch-eda/static/a87e9bc7cc0449b738232ac658865d92/2faef/kafka-hl-view.png)](https://ibm-cloud-architecture.github.io/refarch-eda/static/a87e9bc7cc0449b738232ac658865d92/2faef/kafka-hl-view.png)
+
 
