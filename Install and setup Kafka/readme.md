@@ -4,15 +4,16 @@
   - Java 8 (exacly this version)   
 
 
-**Install on MAC OS**
+## **Install on MAC OS**
+
 Mac OS X - Summary
 In summary, for Mac OS X
 Install brew if needed: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Download and Setup Java 11 JDK:
+Download and Setup Java 8 JDK:
 
 brew tap caskroom/versions
-brew cask install java11
+brew cask install java8
 Download & Extract the Kafka binaries from https://kafka.apache.org/downloads
 
 Install Kafka commands using brew: brew install kafka
@@ -33,12 +34,13 @@ Start Kafka in another terminal window: kafka-server-start config/server.propert
 
 <br>
 
-**Install on Linux**
+## **Install on Linux**
+
 Linux - Summary
 In summary, for Linux (ex: Ubuntu)
-Download and Setup Java 11 JDK:
+Download and Setup Java 8 JDK:
 
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-8-jdk
 Download & Extract the Kafka binaries from https://kafka.apache.org/downloads
 
 Try Kafka commands using bin/kafka-topics.sh (for example)
@@ -61,8 +63,41 @@ Important: For the rest of the course, don't forget to add the extension .sh to 
 
 <br>
 
+## **Install on Windows**
+
+In summary, for Windows
+NOTE: Kafka 3.0 has a bug for Windows, either use Kafka 2.8 or wait for Kafka 3.0.1 or Kafka 3.1.0 (https://issues.apache.org/jira/browse/KAFKA-13391)
+
+Download and Setup Java 8 JDK
+
+Download the Kafka binaries from https://kafka.apache.org/downloads
+
+Extract Kafka at the root of C:\
+
+Setup Kafka bins in the Environment variables section by editing Path
+
+Try Kafka commands using kafka-topics.bat (for example)
+
+Edit Zookeeper & Kafka configs using NotePad++ https://notepad-plus-plus.org/download/
+
+zookeeper.properties: dataDir=C:/kafka_2.12-2.0.0/data/zookeeper (yes the slashes are inversed)
+
+server.properties: log.dirs=C:/kafka_2.12-2.0.0/data/kafka (yes the slashes are inversed)
+
+Start Zookeeper in one command line: zookeeper-server-start.bat config\zookeeper.properties
+
+Start Kafka in another command line: kafka-server-start.bat config\server.properties
 
 
+
+Important: For the rest of the course, don't forget to add the extension .bat to commands being run
+
+
+<br>
+
+<br>
+
+<br>
 
 <br>
 
