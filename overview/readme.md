@@ -87,4 +87,9 @@
 - You can use more one Zookeeper, one is a Leader and others are the followers, the Zookeeper Leader comunicate with a kafka and Zookeeper followers
 - [![image](https://ibm-cloud-architecture.github.io/refarch-eda/static/a87e9bc7cc0449b738232ac658865d92/2faef/kafka-hl-view.png)](https://ibm-cloud-architecture.github.io/refarch-eda/static/a87e9bc7cc0449b738232ac658865d92/2faef/kafka-hl-view.png)
 
+<br>
+
+### ROUNDUP
+[![image](https://3.bp.blogspot.com/-zZXSxoZiG_Y/XHv3FYooSAI/AAAAAAAAAJs/57t1wWC9lGMmeBFTIiNvtH9GWegsl5oAACLcBGAs/s1600/Screen%2BShot%2B2019-03-03%2Bat%2B8.46.41%2BAM.png)](https://3.bp.blogspot.com/-zZXSxoZiG_Y/XHv3FYooSAI/AAAAAAAAAJs/57t1wWC9lGMmeBFTIiNvtH9GWegsl5oAACLcBGAs/s1600/Screen%2BShot%2B2019-03-03%2Bat%2B8.46.41%2BAM.png)
+
 
