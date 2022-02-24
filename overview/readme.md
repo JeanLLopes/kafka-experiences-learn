@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OVERVIEW
 
 ### PARTITIONS and OFFSET
@@ -93,3 +94,5 @@
 [![image](https://3.bp.blogspot.com/-zZXSxoZiG_Y/XHv3FYooSAI/AAAAAAAAAJs/57t1wWC9lGMmeBFTIiNvtH9GWegsl5oAACLcBGAs/s1600/Screen%2BShot%2B2019-03-03%2Bat%2B8.46.41%2BAM.png)](https://3.bp.blogspot.com/-zZXSxoZiG_Y/XHv3FYooSAI/AAAAAAAAAJs/57t1wWC9lGMmeBFTIiNvtH9GWegsl5oAACLcBGAs/s1600/Screen%2BShot%2B2019-03-03%2Bat%2B8.46.41%2BAM.png)
 
 
+=======
+>>>>>>> 3bc854c (add new module)
