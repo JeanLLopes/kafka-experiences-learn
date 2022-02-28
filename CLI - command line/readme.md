@@ -70,7 +70,7 @@ To create a consumer you can use the follow command line, in this case, each con
 
 
 
-## **RESETTING OFFSETS **
+## RESETTING OFFSETS
 
 To reset a offset for a kafka topic you can use this command, reset all messages:
 
