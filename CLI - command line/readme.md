@@ -87,3 +87,24 @@ If you can backward 2 messages, use this command, with parater **--shift-by -2**
 ``kafka-consomer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --reset-offsets --shift-by -2 --execute --topic first-topic``
 
 
+
+## OBSERVATIONS
+
+The CLI has many options, but here are the others that are most commonly used:
+
+Producer with keys
+
+``kafka-console-producer --broker-list 127.0.0.1:9092 --topic first_topic --property parse.key=true --property key.separator=,``
+> key,value
+> another key,another value
+Consumer with keys
+
+``kafka-console-consumer --bootstrap-server 127.0.0.1:9092 --topic first_topic --from-beginning --property print.key=true --property key.separator=,``
+
+
+<br>
+   
+**KafkaCat** as a replacement for **Kafka CLI**
+KafkaCat (https://github.com/edenhill/kafkacat) is an open-source alternative to using the Kafka CLI, created by Magnus Edenhill.
+
+https://medium.com/@coderunner/debugging-with-kafkacat-df7851d21968
