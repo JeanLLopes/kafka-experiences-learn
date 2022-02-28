@@ -64,7 +64,26 @@ To create a consumer you can use the follow command line, in this case, each con
 [![image](https://miro.medium.com/max/1400/1*gbzEqBqcfZ7WhKKVmBOJwQ.png)](https://miro.medium.com/max/1400/1*gbzEqBqcfZ7WhKKVmBOJwQ.png)
 
 
+### DESCRIBE
+
+[![image](https://learncode24h.com/wp-content/uploads/2021/05/kafka-consumer-group.png)](https://learncode24h.com/wp-content/uploads/2021/05/kafka-consumer-group.png)
 
 
+
+## **RESETTING OFFSETS **
+
+To reset a offset for a kafka topic you can use this command, reset all messages:
+
+``kafka-consomer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --reset-offsets --to-earlist --execute --topic first-topic``
+
+
+If you can foward 2 messages, use this command, with parater **--shift-by 2**
+
+``kafka-consomer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --reset-offsets --shift-by 2 --execute --topic first-topic``
+
+
+If you can backward 2 messages, use this command, with parater **--shift-by -2**
+
+``kafka-consomer-groups --bootstrap-server 127.0.0.1:9092 --group my-first-application --reset-offsets --shift-by -2 --execute --topic first-topic``
 
 
